@@ -1,0 +1,11 @@
+name: billing-check
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: echo "actions alive"; uname -a
